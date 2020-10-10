@@ -27,5 +27,5 @@ Meslek eklemek için **meslekler.json** dosyasını açıp **"meslekKodu":"gör�
 
 #### Güncelleme notları 1.0.1
 > * CK atma eklendi !
-   * Kullanım: !ck HEX
+>   * Kullanım: !ck HEX
 > * İzinli rol eklendi. Rolü değiştirmek için **config.json**'dan ID sini girebilirsiniz.
