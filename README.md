@@ -33,7 +33,7 @@ Meslek eklemek için **meslekler.json** dosyasını açıp **"meslekKodu":"gör�
 
 # Güncelleme notları 1.0.3
 > * !paraver eklendi !
->   * !paraver HEX MIKTAR
+>   * !paraver HEX MIKTAR (**Yönetici** gerekmektedir.)
 >     * ÖRN: !paraver 11000013b62aaa6 200000
 
 
