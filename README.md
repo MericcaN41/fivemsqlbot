@@ -1,6 +1,8 @@
 # Fivem SQL Bot
 ### FiveM Databaseinizden bilgi almaya yarar.
 
+![image](https://i.imgur.com/MNRbibv.png)
+
 ## Nasıl Kurulur ?
 
 Dosyaları indirip bir klasöre attıktan sonra klasörün içinde CMD açıp bunları yazın.
