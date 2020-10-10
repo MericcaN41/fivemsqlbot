@@ -9,9 +9,9 @@ Dosyaları indirip bir klasöre attıktan sonra klasörün içinde CMD açıp bu
 > * npm i discord.js
 > * npm i mysql
 > * npm i dotenv
-> * (İSTEĞE GÖRE) Sunucunuza **esx_whitelist** scriptini kurabilirsiniz. [Link](https://github.com/esx-framework/esx_whitelist)
 
 <p>Databaseinizin aktif olduğundan emin olun. (XAMP vs.)</p>
+<p>(İSTEĞE GÖRE) <strong>esx_whitelist</strong> whitelist scriptini kurun. [Link](https://github.com/esx-framework/esx_whitelist)</p>
 <p>Ardından .env dosyasına botun tokenini girip <strong>baslat.bat</strong> dosyasını açın.</p>
 
 
