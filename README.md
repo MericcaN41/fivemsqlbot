@@ -21,6 +21,7 @@ Dosyaları indirip bir klasöre attıktan sonra klasörün içinde CMD açıp bu
 * !ck HEX --> Hexi girilen kişiye CK atar. Sadece **yöneticiler** kullanabilir.
 * !wlekle HEX --> Hexi girilen kişiye whitelist verir. (esx_whitelist)
 * !wlsil HEX --> Hexi girilen kişiden whitelistini alır. (esx_whitelist)
+* !paraver HEX MIKTAR --> Hexi girilen kişinin parasını belirtilen miktara ayarlar, **EKLEMEZ!**
 
 ## Nasıl meslek eklerim ?
 
