@@ -1,7 +1,7 @@
 # Fivem SQL Bot
 ### FiveM Databaseinizden bilgi almaya yarar.
 
-![image](https://i.imgur.com/MNRbibv.png)
+![image](https://i.imgur.com/MNRbibv.png) ![image2](https://i.imgur.com/9QFENK8.png)
 
 ## Nasıl Kurulur ?
 
