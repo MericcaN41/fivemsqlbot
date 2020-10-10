@@ -31,7 +31,13 @@ Bunu yapmak zorunda değilsiniz ama meslek kodunun yerine istediğinizi yazdırm
 
 Meslek eklemek için **meslekler.json** dosyasını açıp **"meslekKodu":"görünecekİsim"** şeklinde eklemeler yapabilirsiniz.
 
-# Güncelleme notları 1.0.2
+# Güncelleme notları 1.0.3
+> * !paraver eklendi !
+>   * !paraver HEX MIKTAR
+>     * ÖRN: !paraver 11000013b62aaa6 200000
+
+
+### Güncelleme notları 1.0.2
 > * esx_whitelist uyumu eklendi !
 >   * !wlekle HEX --> Whiteliste ekler. (İzinli rol gerekir.)
 >   * !wlsil HEX --> Whitelistten çıkartır. (İzinli rol gerekir.)
