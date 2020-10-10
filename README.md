@@ -4,6 +4,8 @@
 
 ## Nasıl Kurulur ?
 
+Her şeyden önce bilgisayarınızda **Node.js** yüklü olduğundan emin olun. [Node.js](https://nodejs.org/)
+
 Dosyaları indirip bir klasöre attıktan sonra klasörün içinde CMD açıp bunları yazın.
 > * npm i discord.js
 > * npm i mysql
