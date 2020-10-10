@@ -33,8 +33,8 @@ Meslek eklemek için **meslekler.json** dosyasını açıp **"meslekKodu":"gör�
 
 # Güncelleme notları 1.0.2
 > * esx_whitelist uyumu eklendi !
->   * !wlekle HEX --> Whiteliste ekler.
->   * !wlsil HEX --> Whitelistten çıkartır.
+>   * !wlekle HEX --> Whiteliste ekler. (İzinli rol gerekir.)
+>   * !wlsil HEX --> Whitelistten çıkartır. (İzinli rol gerekir.)
 > * Bazı hatalar fixlendi.
 
 
