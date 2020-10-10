@@ -11,7 +11,7 @@ Dosyaları indirip bir klasöre attıktan sonra klasörün içinde CMD açıp bu
 > * npm i dotenv
 
 <p>Databaseinizin aktif olduğundan emin olun. (XAMP vs.)</p>
-<p>(İSTEĞE GÖRE) <strong>esx_whitelist</strong> whitelist scriptini kurun. [Link](https://github.com/esx-framework/esx_whitelist)</p>
+<p>(İSTEĞE GÖRE) <strong>esx_whitelist</strong> whitelist scriptini kurun.</p> [Link](https://github.com/esx-framework/esx_whitelist)
 <p>Ardından .env dosyasına botun tokenini girip <strong>baslat.bat</strong> dosyasını açın.</p>
 
 
