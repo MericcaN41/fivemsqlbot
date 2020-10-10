@@ -272,7 +272,7 @@ client.on("message", async (message) => {
                     let user = result[0]
                     if (!user) {
                         paraEmbed.setColor("RED")
-                        .setDescription(`Girilen hex ID'si ile hiçbir kullanıcı bulunamadı.`)
+                        .setDescription(`Girilen hex ID'si ile hiçbir kullanıcı bulunamadı`)
                         .setAuthor("İşlem başarısız!")
                         message.channel.send(paraEmbed)
                         return;
