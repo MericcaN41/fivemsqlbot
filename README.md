@@ -10,8 +10,9 @@ Dosyaları indirip bir klasöre attıktan sonra klasörün içinde CMD açıp bu
 > * npm i mysql
 > * npm i dotenv
 
-Databaseinizin aktif olduğundan emin olun. (XAMP vs.)
-Ardından .env dosyasına botun tokenini girip **baslat.bat** dosyasını açın.
+<p>Databaseinizin aktif olduğundan emin olun. (XAMP vs.)</p>
+<p>Ardından .env dosyasına botun tokenini girip <strong>baslat.bat</strong> dosyasını açın.</p>
+
 
 ## Nasıl kullanılır ?
 
