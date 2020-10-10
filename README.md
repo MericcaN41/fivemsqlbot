@@ -6,6 +6,7 @@
 Dosyaları indirip bir klasöre attıktan sonra klasörün içinde CMD açıp bunları yazın.
 > * npm i discord.js
 > * npm i mysql
+> * npm i dotenv
 
 Ardından .env dosyasına botun tokenini girip **baslat.bat** dosyasını açın.
 
