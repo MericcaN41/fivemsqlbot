@@ -31,16 +31,16 @@ client.on("ready", () => {
 
 client.on("message", async (message) => {
     let args = message.content.substring(prefix.length).split(" ")
-    let izinliRol = message.guild.roles.cache.find(r => r.id === ayarlar.izinliRolid)
+    let izinliRol = message.guild.roles.cache.get(ayarlar.izinliRolid)
 
     switch(args[0]) {
         case "kimlik":
+            const bilgiEmbed = new Discord.MessageEmbed()
+            .setFooter("MrcSQLSystem")
             if (izinliRol) {
-                if (message.member.roles.cache.find(izinliRol)) {
+                if (message.member.roles.cache.find(r => r.id === izinliRol.id)) {
                     let hex = args[1]
                     if (!hex) return message.channel.send("Bilgisini bulmak istediğin oyuncunun HEX ID'sini girmelisin!")
-                    const bilgiEmbed = new Discord.MessageEmbed()
-                    .setFooter("MrcSQLSystem")
                     let arama = "SELECT * FROM users WHERE identifier = ?"
                     if (hex.startsWith("steam:") === false) {
                         hex = `steam:${hex}`
@@ -72,18 +72,25 @@ client.on("message", async (message) => {
                         .addField(`💻・Grup` ,`${user.group}`)
                         message.channel.send(bilgiEmbed)
                     })
-                    break;
+                } else {
+                    bilgiEmbed.setColor("RED")
+                    .setDescription(`Bunu yapmak için gereken yetkiye sahip değilsiniz!`)
+                    .setAuthor("İşlem başarısız!")
+                    message.channel.send(bilgiEmbed)
+                    return;
                 }
-            }
-        /*-----------*/
+            } else return
+            break;
+        // KİMLİK BİTİŞ
+
         case "telefon":
+            const numaraEmbed = new Discord.MessageEmbed()
+            .setFooter("MrcSQLSystem")
             if (izinliRol) {
-                if (message.member.roles.cache.find(izinliRol)) {
+                if (message.member.roles.cache.find(r => r.id === izinliRol.id)) {
                     let numara = args[1]
                     if (!numara) return message.channel.send("Bir numara girmelisin.")
                     let aranacak = "SELECT * FROM users WHERE phone_number = ?"
-                    const numaraEmbed = new Discord.MessageEmbed()
-                    .setFooter("MrcSQLSystem")
                     connection.query(aranacak,numara, (err,result) => {
                         let user = result[0]
                         if (!user) {
@@ -101,16 +108,23 @@ client.on("message", async (message) => {
                         .setColor("GREEN")
                         message.channel.send(numaraEmbed)
                     })
-                    break;
+                } else {
+                    numaraEmbed.setColor("RED")
+                    .setDescription(`Bunu yapmak için gereken yetkiye sahip değilsiniz!`)
+                    .setAuthor("İşlem başarısız!")
+                    message.channel.send(numaraEmbed)
+                    return;
                 }
-            }
+            } else return
+            break;
+        //TELEFON BİTİŞ
             
         case "ck":
+            const ckEmbed = new Discord.MessageEmbed()
+            .setFooter("MrcSQLSystem")
             if (message.member.hasPermission("ADMINISTRATOR")) {
                 let hex = args[1]
                 if (!hex) return message.channel.send("Bir hex girmelisin.")
-                const ckEmbed = new Discord.MessageEmbed()
-                .setFooter("MrcSQLSystem")
                 if (hex.startsWith("steam:") === false) {
                     hex = `steam:${hex}`
                 }
@@ -157,7 +171,91 @@ client.on("message", async (message) => {
                         })
                     }
                 })
+            }  else {
+                ckEmbed.setColor("RED")
+                .setDescription(`Bunu yapmak için gereken yetkiye sahip değilsiniz!`)
+                .setAuthor("İşlem başarısız!")
+                message.channel.send(ckEmbed)
+                return;
             }
+            break;
+        // CK BİTİŞ
+
+
+        case "wlekle":
+            const wlEmbed = new Discord.MessageEmbed()
+            .setFooter("MrcSQLSystem")
+            if (message.member.roles.cache.find(r => r.id === izinliRol.id)) {
+                let hex = args[1]
+                if (hex.startsWith("steam:") === false) {
+                    hex = `steam:${hex}`
+                }
+                if (!hex) return message.channel.send("Bir hex girmelisin.")
+                connection.query("SELECT * FROM whitelist WHERE identifier = ?",hex,(err,result) => {
+                    let user = result[0]
+                    if (!user) {
+                        connection.query(`INSERT INTO whitelist (identifier) VALUES (\'${hex}\')`,(err,result) => {
+                            wlEmbed.setColor("GREEN")
+                            .setDescription(`${hex} ID'si başarıyla whiteliste eklendi.`)
+                            .setAuthor("İşlem başarılı!")
+                            message.channel.send(wlEmbed)
+                        })
+                    } else {
+                        wlEmbed.setColor("RED")
+                        .setDescription(`${hex} ID'si zaten whitelistte bulunmakta.`)
+                        .setAuthor("İşlem başarısız!")
+                        message.channel.send(wlEmbed)
+                    }
+                })
+            } else {
+                wlEmbed.setColor("RED")
+                .setDescription(`Bunu yapmak için gereken yetkiye sahip değilsiniz!`)
+                .setAuthor("İşlem başarısız!")
+                message.channel.send(wlEmbed)
+                return;
+            }
+            break;
+        // WL EKLE BİTİŞ
+
+
+        case "wlsil":
+            const silEmbed = new Discord.MessageEmbed()
+            .setFooter("MrcSQLSystem")
+            if (izinliRol) {
+                if (message.member.roles.cache.find(r => r.id === izinliRol.id)) {
+                    let hex = args[1]
+                    if (hex.startsWith("steam:") === false) {
+                        hex = `steam:${hex}`
+                    }
+                    
+                    connection.query("SELECT * FROM whitelist WHERE identifier = ?",hex,(err,result) => {
+                        let user = result[0]
+                        if (user) {
+                            connection.query("DELETE FROM whitelist WHERE identifier = ?",hex,(err,result,fields) => {
+                                if (!err) {
+                                    silEmbed.setColor("GREEN")
+                                    .setAuthor("İşlem başarılı!")
+                                    .setDescription(`${hex} ID'si başarıyla whitelistten çıkartıldı.`)
+                                    message.channel.send(silEmbed)
+                                } else return
+                            })
+                        } else {
+                            silEmbed.setColor("RED")
+                            .setAuthor("İşlem başarısız!")
+                            .setDescription(`${hex} ID'si zaten whitelistte değil.`)
+                            message.channel.send(silEmbed)
+                        }
+                    })
+                }  else {
+                    wlEmbed.setColor("RED")
+                    .setDescription(`Bunu yapmak için gereken yetkiye sahip değilsiniz!`)
+                    .setAuthor("İşlem başarısız!")
+                    message.channel.send(wlEmbed)
+                    return;
+                }
+            } else return
+            break;
+        //WL SİL BİTİŞ
 
     }
 });
