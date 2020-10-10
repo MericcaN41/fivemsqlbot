@@ -9,7 +9,7 @@ const connection = mysql.createConnection(ayarlar.sql)
 
 connection.connect(err => {
     if (err) {
-        console.log("Database ile bağlantı sağlanamadı ! Bot kapanacaktır. Lütfen database bağlantınızı kontrol edip tekrar deneyiniz.") // XXAMP açın.
+        console.log("Database ile bağlantı sağlanamadı ! Bot kapanacaktır. Lütfen database bağlantınızı kontrol edip tekrar deneyiniz.") // XAMPP açın.
         process.exit(1)
     }
     console.log("Database ile bağlantı başarıyla sağlandı !")
