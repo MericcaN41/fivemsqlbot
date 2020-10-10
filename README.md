@@ -14,6 +14,7 @@ Ardından .env dosyasına botun tokenini girip **baslat.bat** dosyasını açın
 
 * !kimlik HEX --> Hexi girilen kişinin bilgilerini yazar.
 * !telefon telefonNumarası --> Telefon numarası girilen kişinin bilgilerini yazar. Telefondan spam atanları bulmak için iyi bir yöntem.
+* !ck HEX --> Hexi girilen kişiye CK atar. Sadece **yöneticiler** kullanabilir.
 
 ## Nasıl meslek eklerim ?
 
