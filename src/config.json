@@ -4,5 +4,6 @@
         "user": "root",
         "password": "",
         "database": "essentialmode"
-    }
+    },
+    "izinliRolid":"123456789"
 }
