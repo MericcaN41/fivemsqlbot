@@ -35,10 +35,10 @@ Bunu yapmak zorunda değilsiniz ama meslek kodunun yerine istediğinizi yazdırm
 Meslek eklemek için **meslekler.json** dosyasını açıp **"meslekKodu":"görünecekİsim"** şeklinde eklemeler yapabilirsiniz.
 
 # Güncelleme notları 1.0.4
-> *!bankaparaver eklendi ! (!paraver ile aynı mantıkta çalışmaktadır.)
-> *!meslekbilgi eklendi!
+> * !bankaparaver eklendi ! (!paraver ile aynı mantıkta çalışmaktadır.)
+> * !meslekbilgi eklendi!
 >  * ÖRN: !meslekbilgi police 1
-> *!telnodeğiş eklendi!
+> * !telnodeğiş eklendi!
 >  * ÖRN: !telnodeğiş 11000010aceb57a 154786
 > * Bazı hatalar fixlendi.
 
