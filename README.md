@@ -16,7 +16,7 @@ Dosyaları indirip bir klasöre attıktan sonra klasörün içinde CMD açıp bu
 <p>Ardından .env dosyasına botun tokenini girip <strong>baslat.bat</strong> dosyasını açın.</p>
 
 
-## Nasıl kullanılır ?
+## Bütün komutlar
 
 * !kimlik HEX --> Hexi girilen kişinin bilgilerini yazar.
 * !telefon telefonNumarası --> Telefon numarası girilen kişinin bilgilerini yazar. Telefondan spam atanları bulmak için iyi bir yöntem.
@@ -24,6 +24,9 @@ Dosyaları indirip bir klasöre attıktan sonra klasörün içinde CMD açıp bu
 * !wlekle HEX --> Hexi girilen kişiye whitelist verir. (esx_whitelist)
 * !wlsil HEX --> Hexi girilen kişiden whitelistini alır. (esx_whitelist)
 * !paraver HEX MIKTAR --> Hexi girilen kişinin parasını belirtilen miktara ayarlar, **EKLEMEZ!**
+* !bankparaver HEX MIKTAR --> Hexi girilen kişinin bankadaki parasını belirtilen miktara ayarlar, **EKLEMEZ!**
+* !meslekbilgi meslek**KODU** seviye (Girilmesse **0**) --> Girilen bilgilere göre mesleğin bilgilerini gösterir (Kod,maaş vs.)
+* !telnodeğiş HEX NUMARA --> Hexi girilen kişinin telefon numarasını değiştirir. Sadece **yöneticiler** kullanabilir.
 
 ## Nasıl meslek eklerim ?
 
