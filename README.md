@@ -1,8 +1,10 @@
 # Fivem SQL Bot
-### FiveM Databaseinizden bilgi almaya yarar.
+### FiveM Databaseinizi Discorda taşır !
 ![image](https://i.imgur.com/MNRbibv.png) ![image2](https://i.imgur.com/9QFENK8.png)
 
 ## Nasıl Kurulur ?
+
+Her şeyden önce bilgisayarınızda **Node.js** yüklü olduğundan emin olun. [Node.js](https://nodejs.org/)
 
 Dosyaları indirip bir klasöre attıktan sonra klasörün içinde CMD açıp bunları yazın.
 > * npm i discord.js
@@ -21,6 +23,7 @@ Dosyaları indirip bir klasöre attıktan sonra klasörün içinde CMD açıp bu
 * !ck HEX --> Hexi girilen kişiye CK atar. Sadece **yöneticiler** kullanabilir.
 * !wlekle HEX --> Hexi girilen kişiye whitelist verir. (esx_whitelist)
 * !wlsil HEX --> Hexi girilen kişiden whitelistini alır. (esx_whitelist)
+* !paraver HEX MIKTAR --> Hexi girilen kişinin parasını belirtilen miktara ayarlar, **EKLEMEZ!**
 
 ## Nasıl meslek eklerim ?
 
@@ -31,14 +34,28 @@ Bunu yapmak zorunda değilsiniz ama meslek kodunun yerine istediğinizi yazdırm
 
 Meslek eklemek için **meslekler.json** dosyasını açıp **"meslekKodu":"görünecekİsim"** şeklinde eklemeler yapabilirsiniz.
 
-# Güncelleme notları 1.0.2
+# Güncelleme notları 1.0.4
+> *!bankaparaver eklendi ! (!paraver ile aynı mantıkta çalışmaktadır.)
+> *!meslekbilgi eklendi!
+>  * ÖRN: !meslekbilgi police 1
+> *!telnodeğiş eklendi!
+>  * ÖRN: !telnodeğiş 11000010aceb57a 154786
+> * Bazı hatalar fixlendi.
+
+## Güncelleme notları 1.0.3
+> * !paraver eklendi !
+>   * !paraver HEX MIKTAR (**Yönetici** gerekmektedir.)
+>     * ÖRN: !paraver 11000013b62aaa6 200000
+
+
+### Güncelleme notları 1.0.2
 > * esx_whitelist uyumu eklendi !
 >   * !wlekle HEX --> Whiteliste ekler. (İzinli rol gerekir.)
 >   * !wlsil HEX --> Whitelistten çıkartır. (İzinli rol gerekir.)
 > * Bazı hatalar fixlendi.
 
 
-### Güncelleme notları 1.0.1
+#### Güncelleme notları 1.0.1
 > * CK atma eklendi !
 >   * Kullanım: !ck HEX (**Yönetici** gerekmektedir.)
 > * İzinli rol eklendi. Rolü değiştirmek için **config.json**'dan ID sini girebilirsiniz. Bu role sahip olmayanlar **kimlik** ve **telefon** komutlarını kullanamaz.

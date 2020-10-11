@@ -247,7 +247,7 @@ client.on("message", async (message) => {
                         }
                     })
                 }  else {
-                    wlEmbed.setColor("RED")
+                    silEmbed.setColor("RED")
                     .setDescription(`Bunu yapmak için gereken yetkiye sahip değilsiniz!`)
                     .setAuthor("İşlem başarısız!")
                     message.channel.send(silEmbed)
@@ -290,10 +290,207 @@ client.on("message", async (message) => {
                 paraEmbed.setColor("RED")
                 .setDescription(`Bunu yapmak için gereken yetkiye sahip değilsiniz!`)
                 .setAuthor("İşlem başarısız!")
-                message.channel.send(para)
+                message.channel.send(paraEmbed)
                 return;
             }
             break;
+            // PARAVER BİTİŞ
+        case "paraver":
+            const paraEmbed = new Discord.MessageEmbed()
+            .setFooter("MrcSQLSystem")
+            if (message.member.hasPermission("ADMINISTRATOR")) {
+                let hex = args[1]
+                if (hex.startsWith("steam:") === false) {
+                    hex = `steam:${hex}`
+                }
+                let para = args[2]
+                if (parseInt(para) > 2147483647) return message.channel.send("Girdiğin miktar çok büyük !")
+
+                connection.query("SELECT * FROM users WHERE identifier = ?",hex,(err,result) => {
+                    let user = result[0]
+                    if (!user) {
+                        paraEmbed.setColor("RED")
+                        .setDescription(`Girilen hex ID'si ile hiçbir kullanıcı bulunamadı.`)
+                        .setAuthor("İşlem başarısız!")
+                        message.channel.send(paraEmbed)
+                        return;
+                    }
+                    connection.query(`UPDATE users SET money = ${parseInt(para)} WHERE money = ${user.money}`,(err,result) => {
+                        if (err) console.log(err)
+                        paraEmbed.setColor("GREEN")
+                        .setDescription(`${hex} ID'li oyuncunun parası başarıyla \`${para}\` miktarına ayarlandı.`)
+                        .setAuthor("İşlem başarılı!")
+                        message.channel.send(paraEmbed)
+                    })
+                })
+
+            } else {
+                paraEmbed.setColor("RED")
+                .setDescription(`Bunu yapmak için gereken yetkiye sahip değilsiniz!`)
+                .setAuthor("İşlem başarısız!")
+                message.channel.send(paraEmbed)
+                return;
+            }
+            break;
+            // PARAVER BİTİŞ
+        case "paraver":
+            const bankaEmbed = new Discord.MessageEmbed()
+            .setFooter("MrcSQLSystem")
+            if (message.member.hasPermission("ADMINISTRATOR")) {
+                let hex = args[1]
+                if (hex.startsWith("steam:") === false) {
+                    hex = `steam:${hex}`
+                }
+                let para = args[2]
+                if (parseInt(para) > 2147483647) return message.channel.send("Girdiğin miktar çok büyük !") 
+
+                connection.query("SELECT * FROM users WHERE identifier = ?",hex,(err,result) => {
+                    let user = result[0]
+                    if (!user) {
+                        bankaEmbed.setColor("RED")
+                        .setDescription(`Girilen hex ID'si ile hiçbir kullanıcı bulunamadı.`)
+                        .setAuthor("İşlem başarısız!")
+                        message.channel.send(bankaEmbed)
+                        return;
+                    }
+                    connection.query(`UPDATE users SET bank = ${parseInt(para)} WHERE bank = ${user.bank}`,(err,result) => {
+                        if (err) console.log(err)
+                        bankaEmbed.setColor("GREEN")
+                        .setDescription(`${hex} ID'li oyuncunun bankadaki parası başarıyla \`${para}\` miktarına ayarlandı.`)
+                        .setAuthor("İşlem başarılı!")
+                        message.channel.send(bankaEmbed)
+                    })
+                })
+
+            } else {
+                bankaEmbed.setColor("RED")
+                .setDescription(`Bunu yapmak için gereken yetkiye sahip değilsiniz!`)
+                .setAuthor("İşlem başarısız!")
+                message.channel.send(bankaEmbed)
+                return;
+            }
+            break;
+            // BANKAPARAVER BİTİŞ
+
+            
+        case "meslekver":
+            const meslekEmbed = new Discord.MessageEmbed()
+            .setFooter("MrcSQLSystem")
+            if(message.member.roles.cache.find(r => r.id === izinliRol.id)) {
+                let hex = args[1]
+                if (hex.startsWith("steam:") === false) {
+                    hex = `steam:${hex}`
+                }
+                let meslek = args[2]
+                let grade = parseInt(args[3])
+                if (!hex || !meslek || !grade) return message.channel.send("Hatalı kullanım ! \nÖRN:!meslekver 11000010aceb57a police 1")
+                connection.query("SELECT * FROM users WHERE identifier = ?",hex,(err,result) => {
+                    let user = result[0]
+                    if (user) {
+                        connection.query(`UPDATE users SET job = '${meslek}' WHERE job = '${user.job}'`, (err,result) => {
+                            if (err) console.log(err)
+                        })
+                        connection.query(`UPDATE users SET job_grade = ${grade} WHERE job_grade = ${user.job_grade}`, (err,result) => {
+                            if (err) console.log(err)
+                        })
+                        meslekEmbed.setColor("GREEN")
+                        .setDescription(`${hex} ID'li kullanıcının mesleği ${meslek}(${grade}) olarak ayarlandı!`)
+                        .setAuthor("İşlem başarılı!")
+                        message.channel.send(meslekEmbed)
+                    } else {
+                        meslekEmbed.setColor("RED")
+                        .setDescription(`Girilen hex ID'si ile hiçbir kullanıcı bulunamadı.`)
+                        .setAuthor("İşlem başarısız!")
+                        message.channel.send(meslekEmbed)
+                        return;
+                    }
+                })
+            } else {
+                meslekEmbed.setColor("RED")
+                .setDescription(`Bunu yapmak için gereken yetkiye sahip değilsiniz!`)
+                .setAuthor("İşlem başarısız!")
+                message.channel.send(meslekEmbed)
+                return;
+            }
+            break;
+            // MESLEKVER BİTİŞ
+
+        case "meslekbilgi":
+            const mbilgiEmbed = new Discord.MessageEmbed()
+            .setFooter("MrcSQLSystem")
+            if (message.member.roles.cache.find(r => r.id === izinliRol.id)) {
+                let meslek = args[1]
+                let grade = args[2]
+                if (!grade) {
+                    grade = 0
+                }
+                connection.query(`SELECT * FROM job_grades WHERE job_name = '${meslek}' AND grade = ${grade}`,(err,result) => {
+                    if (err) console.log(err)
+                    let bMeslek = result[0]
+                    if (bMeslek) {
+                        mbilgiEmbed.setColor("GREEN")
+                        .setAuthor(`${bMeslek.job_name} mesleğinin bilgileri.`)
+                        .addField("Meslek kodu",bMeslek.job_name)
+                        .addField("Meslek ismi",`${bMeslek.job_name} - ${bMeslek.label}`)
+                        .addField("Meslek seviyesi",bMeslek.grade)
+                        .addField("Meslek maaşı",bMeslek.salary)
+                        message.channel.send(mbilgiEmbed)
+                    } else {
+                        mbilgiEmbed.setColor("RED")
+                        .setAuthor("İşlem başarısız!")
+                        .setDescription("Girilen isimle herhangi bir meslek bulunamadı!")
+                        message.channel.send(mbilgiEmbed)
+                        return;
+                    }
+                })
+            } else {
+                mbilgiEmbed.setColor("RED")
+                .setDescription(`Bunu yapmak için gereken yetkiye sahip değilsiniz!`)
+                .setAuthor("İşlem başarısız!")
+                message.channel.send(mbilgiEmbed)
+                return;
+            }
+            break;
+            // MESLEKBİLGİ BİTİŞ
+            
+        case "telnodeğiş":
+            const telEmbed = new Discord.MessageEmbed()
+            .setFooter("MrcSQLSystem")
+            if (message.member.hasPermission("ADMINISTRATOR")) {
+                let hex = args[1]
+                if (hex.startsWith("steam:") === false) {
+                    hex = `steam:${hex}`
+                }
+                let no = args[2]
+
+                connection.query("SELECT * FROM users WHERE identifier = ?",hex,(err,result) => {
+                    let user = result[0]
+                    if (user) {
+                        connection.query(`UPDATE users SET phone_number = ${no} WHERE phone_number = ${user.phone_number}`,(err,result) => {
+                            if (err) console.log(err)
+                            telEmbed.setColor("GREEN")
+                            .setAuthor("İşlem başarılı!")
+                            .setDescription(`${hex} ID'li kullanıcının telefon numarası ${no} olarak değiştirildi!`)
+                            message.channel.send(telEmbed)
+                        })
+                    } else {
+                        telEmbed.setColor("RED")
+                        .setDescription(`Girilen hex ID'si ile hiçbir kullanıcı bulunamadı.`)
+                        .setAuthor("İşlem başarısız!")
+                        message.channel.send(telEmbed)
+                        return;
+                    }
+                })
+            } else {
+                telEmbed.setColor("RED")
+                .setDescription(`Bunu yapmak için gereken yetkiye sahip değilsiniz!`)
+                .setAuthor("İşlem başarısız!")
+                message.channel.send(telEmbed)
+                return;
+            }
+            break;
+            // TELNO BİTİŞ
+
     }
 });
 
