@@ -40,9 +40,9 @@ Meslek eklemek için **meslekler.json** dosyasını açıp **"meslekKodu":"gör�
 # Güncelleme notları 1.0.4
 > * !bankaparaver eklendi ! (!paraver ile aynı mantıkta çalışmaktadır.)
 > * !meslekbilgi eklendi!
->  * ÖRN: !meslekbilgi police 1
+>   * ÖRN: !meslekbilgi police 1
 > * !telnodeğiş eklendi!
->  * ÖRN: !telnodeğiş 11000010aceb57a 154786
+>   * ÖRN: !telnodeğiş 11000010aceb57a 154786
 > * Bazı hatalar fixlendi.
 
 ## Güncelleme notları 1.0.3
