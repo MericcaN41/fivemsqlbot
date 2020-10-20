@@ -39,6 +39,7 @@ Dosyaları indirip bir klasöre attıktan sonra klasörün içinde CMD açıp bu
 * !meslekbilgi meslek**KODU** SEVIYE (Girilmesse **0**) --> Girilen bilgilere göre mesleğin bilgilerini gösterir (Kod,maaş vs.)
 * !meslekver HEX meslek**KODU** SEVIYE --> Hexi girilen kişinin mesleğini değiştirir.
 * !telnodeğiş HEX NUMARA --> Hexi girilen kişinin telefon numarasını değiştirir. Sadece **yöneticiler** kullanabilir.
+* !isimdeğiştir HEX İSİM SOYİSİM --> Hexi girilen kişinin ismini ve soy ismini değiştirir.
 
 ## Nasıl meslek eklerim ?
 
@@ -54,6 +55,8 @@ Meslek eklemek için **meslekler.json** dosyasını açıp **"meslekKodu":"gör�
 > * **index.js** kısaltıldı.
 > * CMD renklendirildi
 >   * ![image3](https://i.imgur.com/PrqvrH0.png)
+> * !isimdeğiştir eklendi !
+>   * ÖRN: !isimdeğiştir 11000010aceb57a Ahmet Bekçi
 
 ## Güncelleme notları 1.0.4
 > * !bankaparaver eklendi ! (!paraver ile aynı mantıkta çalışmaktadır.)
