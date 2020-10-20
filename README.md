@@ -1,7 +1,14 @@
 # Fivem SQL Bot
 # MericcaN41#0652
 ### FiveM Databaseinizi Discorda taşır !
-![image](https://i.imgur.com/MNRbibv.png) ![image2](https://i.imgur.com/9QFENK8.png)
+<img src="https://i.imgur.com/MNRbibv.png" width="200"> <img src="https://i.imgur.com/cM5iYkR.png" width="200">
+
+
+<img src="https://i.imgur.com/9QFENK8.png" width="400">
+<img src="https://i.imgur.com/3HqfULc.png" width="400">
+<img src="https://i.imgur.com/VemlW50.png" width="400">
+
+
 
 ## Nasıl Kurulur ?
 
@@ -44,6 +51,7 @@ Meslek eklemek için **meslekler.json** dosyasını açıp **"meslekKodu":"gör�
 > * **commands** klasörü eklendi. Bütün komutlar burada bulunmaktadır.
 > * **index.js** kısaltıldı.
 > * CMD renklendirildi
+>   * ![image3](https://i.imgur.com/PrqvrH0.png)
 
 ## Güncelleme notları 1.0.4
 > * !bankaparaver eklendi ! (!paraver ile aynı mantıkta çalışmaktadır.)
