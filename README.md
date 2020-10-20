@@ -13,6 +13,7 @@ Dosyaları indirip bir klasöre attıktan sonra klasörün içinde CMD açıp bu
 > * (İSTEĞE GÖRE) **esx_whitelist** scriptini kurun. [Link](https://github.com/esx-framework/esx_whitelist)
 
 <p>Databaseinizin aktif olduğundan emin olun. (XAMP vs.)</p>
+<p>Config.json dosyasından komutları kullanacak rolün ID'sini girin.</p>
 <p>Ardından .env dosyasına botun tokenini girip <strong>baslat.bat</strong> dosyasını açın.</p>
 
 
