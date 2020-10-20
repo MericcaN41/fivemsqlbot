@@ -1,6 +1,16 @@
 # Fivem SQL Bot
+# MericcaN41#0652
 ### FiveM Databaseinizi Discorda taşır !
-![image](https://i.imgur.com/MNRbibv.png) ![image2](https://i.imgur.com/9QFENK8.png)
+<img src="https://i.imgur.com/MNRbibv.png" width="200"  height="300"> <img src="https://i.imgur.com/cM5iYkR.png" width="200"  height="300"> <img src="https://i.imgur.com/9QFENK8.png" width="400" height="300">
+
+
+<img src="https://i.imgur.com/3HqfULc.png" width="400" height="200"> <img src="https://i.imgur.com/VemlW50.png" width="400" height="200">
+<img src="https://i.imgur.com/NiLMMd8.png" width="400" height="200"> <img src="https://i.imgur.com/95TmOCt.png" width="400" height="200">
+
+
+
+
+
 
 ## Nasıl Kurulur ?
 
@@ -39,7 +49,13 @@ Bunu yapmak zorunda değilsiniz ama meslek kodunun yerine istediğinizi yazdırm
 
 Meslek eklemek için **meslekler.json** dosyasını açıp **"meslekKodu":"görünecekİsim"** şeklinde eklemeler yapabilirsiniz.
 
-# Güncelleme notları 1.0.4
+# Güncelleme notları 1.0.5
+> * **commands** klasörü eklendi. Bütün komutlar burada bulunmaktadır.
+> * **index.js** kısaltıldı.
+> * CMD renklendirildi
+>   * ![image3](https://i.imgur.com/PrqvrH0.png)
+
+## Güncelleme notları 1.0.4
 > * !bankaparaver eklendi ! (!paraver ile aynı mantıkta çalışmaktadır.)
 > * !meslekbilgi eklendi!
 >   * ÖRN: !meslekbilgi police 1
@@ -47,20 +63,20 @@ Meslek eklemek için **meslekler.json** dosyasını açıp **"meslekKodu":"gör�
 >   * ÖRN: !telnodeğiş 11000010aceb57a 154786
 > * Bazı hatalar fixlendi.
 
-## Güncelleme notları 1.0.3
+### Güncelleme notları 1.0.3
 > * !paraver eklendi !
 >   * !paraver HEX MIKTAR (**Yönetici** gerekmektedir.)
 >     * ÖRN: !paraver 11000013b62aaa6 200000
 
 
-### Güncelleme notları 1.0.2
+#### Güncelleme notları 1.0.2
 > * esx_whitelist uyumu eklendi !
 >   * !wlekle HEX --> Whiteliste ekler. (İzinli rol gerekir.)
 >   * !wlsil HEX --> Whitelistten çıkartır. (İzinli rol gerekir.)
 > * Bazı hatalar fixlendi.
 
 
-#### Güncelleme notları 1.0.1
+##### Güncelleme notları 1.0.1
 > * CK atma eklendi !
 >   * Kullanım: !ck HEX (**Yönetici** gerekmektedir.)
 > * İzinli rol eklendi. Rolü değiştirmek için **config.json**'dan ID sini girebilirsiniz. Bu role sahip olmayanlar **kimlik** ve **telefon** komutlarını kullanamaz.
