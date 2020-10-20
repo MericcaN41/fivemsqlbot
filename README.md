@@ -25,7 +25,7 @@ Dosyaları indirip bir klasöre attıktan sonra klasörün içinde CMD açıp bu
 * !wlekle HEX --> Hexi girilen kişiye whitelist verir. (esx_whitelist)
 * !wlsil HEX --> Hexi girilen kişiden whitelistini alır. (esx_whitelist)
 * !paraver HEX MIKTAR --> Hexi girilen kişinin parasını belirtilen miktara ayarlar, **EKLEMEZ!**
-* !bankparaver HEX MIKTAR --> Hexi girilen kişinin bankadaki parasını belirtilen miktara ayarlar, **EKLEMEZ!**
+* !bankaparaver HEX MIKTAR --> Hexi girilen kişinin bankadaki parasını belirtilen miktara ayarlar, **EKLEMEZ!**
 * !meslekbilgi meslek**KODU** SEVIYE (Girilmesse **0**) --> Girilen bilgilere göre mesleğin bilgilerini gösterir (Kod,maaş vs.)
 * !meslekver HEX meslek**KODU** SEVIYE --> Hexi girilen kişinin mesleğini değiştirir.
 * !telnodeğiş HEX NUMARA --> Hexi girilen kişinin telefon numarasını değiştirir. Sadece **yöneticiler** kullanabilir.
