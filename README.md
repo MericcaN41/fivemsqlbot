@@ -51,12 +51,12 @@ Bunu yapmak zorunda değilsiniz ama meslek kodunun yerine istediğinizi yazdırm
 Meslek eklemek için **meslekler.json** dosyasını açıp **"meslekKodu":"görünecekİsim"** şeklinde eklemeler yapabilirsiniz.
 
 # Güncelleme notları 1.0.5
+> * !isimdeğiştir eklendi !
+>   * ÖRN: !isimdeğiştir 11000010aceb57a Ahmet Bekçi
 > * **commands** klasörü eklendi. Bütün komutlar burada bulunmaktadır.
 > * **index.js** kısaltıldı.
 > * CMD renklendirildi
 >   * ![image3](https://i.imgur.com/PrqvrH0.png)
-> * !isimdeğiştir eklendi !
->   * ÖRN: !isimdeğiştir 11000010aceb57a Ahmet Bekçi
 
 ## Güncelleme notları 1.0.4
 > * !bankaparaver eklendi ! (!paraver ile aynı mantıkta çalışmaktadır.)
