@@ -51,7 +51,11 @@ Bunu yapmak zorunda değilsiniz ama meslek kodunun yerine istediğinizi yazdırm
 
 Meslek eklemek için **meslekler.json** dosyasını açıp **"meslekKodu":"görünecekİsim"** şeklinde eklemeler yapabilirsiniz.
 
-# Güncelleme notları 1.0.5
+
+# Güncelleme notları 1.0.6
+> * Değer değiştiren komutlara eski değeri gösterme eklendi. (paraver gibi..)
+
+## Güncelleme notları 1.0.5
 > * !isimdeğiştir eklendi !
 >   * ÖRN: !isimdeğiştir 11000010aceb57a Ahmet Bekçi
 > * **commands** klasörü eklendi. Bütün komutlar burada bulunmaktadır.
@@ -59,7 +63,7 @@ Meslek eklemek için **meslekler.json** dosyasını açıp **"meslekKodu":"gör�
 > * CMD renklendirildi
 >   * ![image3](https://i.imgur.com/PrqvrH0.png)
 
-## Güncelleme notları 1.0.4
+### Güncelleme notları 1.0.4
 > * !bankaparaver eklendi ! (!paraver ile aynı mantıkta çalışmaktadır.)
 > * !meslekbilgi eklendi!
 >   * ÖRN: !meslekbilgi police 1
@@ -67,20 +71,14 @@ Meslek eklemek için **meslekler.json** dosyasını açıp **"meslekKodu":"gör�
 >   * ÖRN: !telnodeğiş 11000010aceb57a 154786
 > * Bazı hatalar fixlendi.
 
-### Güncelleme notları 1.0.3
+##### Güncelleme notları 1.0.3
 > * !paraver eklendi !
 >   * !paraver HEX MIKTAR (**Yönetici** gerekmektedir.)
 >     * ÖRN: !paraver 11000013b62aaa6 200000
 
 
-#### Güncelleme notları 1.0.2
+##### Güncelleme notları 1.0.2
 > * esx_whitelist uyumu eklendi !
 >   * !wlekle HEX --> Whiteliste ekler. (İzinli rol gerekir.)
 >   * !wlsil HEX --> Whitelistten çıkartır. (İzinli rol gerekir.)
 > * Bazı hatalar fixlendi.
-
-
-##### Güncelleme notları 1.0.1
-> * CK atma eklendi !
->   * Kullanım: !ck HEX (**Yönetici** gerekmektedir.)
-> * İzinli rol eklendi. Rolü değiştirmek için **config.json**'dan ID sini girebilirsiniz. Bu role sahip olmayanlar **kimlik** ve **telefon** komutlarını kullanamaz.
