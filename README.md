@@ -58,6 +58,7 @@ Meslek eklemek için **meslekler.json** dosyasını açıp **"meslekKodu":"gör�
 > * Değer değiştiren komutlara eski değeri gösterme eklendi. (paraver gibi..)
 > * !paraekle eklendi!
 >   * ÖRN: !paraekle 11000010aceb57a 10000 <--- Kişinin cüzdanındaki parasına 10000 dolar ekler.
+>   * ![imagepara](https://i.imgur.com/6O4DCyu.png)
 > * !bankaparaekle eklendi!
 >   * ÖRN: !bankaparaekle 11000010aceb57a 10000 <--- Kişinin bankadaki parasına 10000 dolar ekler.
 
