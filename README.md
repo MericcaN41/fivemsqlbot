@@ -1,6 +1,7 @@
 # Fivem SQL Bot
 # MericcaN41#0652
 ### FiveM Databaseinizi Discorda taşır !
+#### NOT: Bu bot bedavadır, editlenmesi serbesttir, satılması kesinlikle yasaktır.
 <img src="https://i.imgur.com/MNRbibv.png" width="200"  height="300"> <img src="https://i.imgur.com/cM5iYkR.png" width="200"  height="300"> <img src="https://i.imgur.com/9QFENK8.png" width="400" height="300">
 
 
