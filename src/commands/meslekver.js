@@ -16,6 +16,8 @@ module.exports = {
                 if (!hex || !meslek || !grade) return message.channel.send("Hatalı kullanım ! \nÖRN:!meslekver 11000010aceb57a police 1")
                 connection.query("SELECT * FROM users WHERE identifier = ?",hex,(err,result) => {
                     let user = result[0]
+                    let eskimeslek = user.job
+                    let eskigrade = user.job_grade
                     if (user) {
                         connection.query(`UPDATE users SET job = '${meslek}' WHERE job = '${user.job}'`, (err,result) => {
                             if (err) console.log(err)
@@ -24,7 +26,7 @@ module.exports = {
                             if (err) console.log(err)
                         })
                         meslekEmbed.setColor("GREEN")
-                        .setDescription(`${hex} ID'li kullanıcının mesleği ${meslek}(${grade}) olarak ayarlandı!`)
+                        .setDescription(`${hex} ID'li kullanıcının mesleği \`${eskimeslek}(${eskigrade})\` mesleğinden \`${meslek}(${grade})\` olarak ayarlandı!`)
                         .setAuthor("İşlem başarılı!")
                         message.channel.send(meslekEmbed)
                     } else {

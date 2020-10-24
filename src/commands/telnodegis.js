@@ -15,12 +15,13 @@ module.exports = {
 
                 connection.query("SELECT * FROM users WHERE identifier = ?",hex,(err,result) => {
                     let user = result[0]
+                    let eskino = user.phone_number
                     if (user) {
                         connection.query(`UPDATE users SET phone_number = ${no} WHERE phone_number = ${user.phone_number}`,(err,result) => {
                             if (err) console.log(err)
                             telEmbed.setColor("GREEN")
                             .setAuthor("İşlem başarılı!")
-                            .setDescription(`${hex} ID'li kullanıcının telefon numarası ${no} olarak değiştirildi!`)
+                            .setDescription(`${hex} ID'li kullanıcının telefon numarası \`${eskino}\` değerinden \`${no}\` olarak değiştirildi!`)
                             message.channel.send(telEmbed)
                         })
                     } else {

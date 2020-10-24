@@ -16,6 +16,8 @@ module.exports = {
 
             connection.query("SELECT * FROM users WHERE identifier = ?",hex,(err,result) => {
                 let user = result[0]
+                let eskiisim = user.firstname
+                let eskisoy = user.lastname
                 if (!user) {
                     isimEmbed.setColor("RED")
                     .setDescription(`Girilen hex ID'si ile hiçbir kullanıcı bulunamadı.`)
@@ -26,7 +28,7 @@ module.exports = {
                 connection.query(`UPDATE users SET firstname = '${isim1}' WHERE firstname = '${user.firstname}'`,(err,result) => {if (err) console.log(err)})
                 connection.query(`UPDATE users SET lastname = '${isim2}' WHERE lastname = '${user.lastname}'`,(err,result) => {if (err) console.log(err)})
                 isimEmbed.setColor("GREEN")
-                .setDescription(`${hex} ID'li oyuncunun ismi \`${isim1} ${isim2}\` olarak değiştirildi.`)
+                .setDescription(`${hex} ID'li oyuncunun ismi \`${eskiisim} ${eskisoy}\` değerinden \`${isim1} ${isim2}\` olarak değiştirildi.`)
                 .setAuthor("İşlem başarılı!")
                 message.channel.send(isimEmbed)
             })

@@ -16,6 +16,7 @@ module.exports = {
 
                 connection.query("SELECT * FROM users WHERE identifier = ?",hex,(err,result) => {
                     let user = result[0]
+                    let eskipara = user.bank
                     if (!user) {
                         bankaEmbed.setColor("RED")
                         .setDescription(`Girilen hex ID'si ile hiçbir kullanıcı bulunamadı.`)
@@ -26,7 +27,7 @@ module.exports = {
                     connection.query(`UPDATE users SET bank = ${parseInt(para)} WHERE bank = ${user.bank}`,(err,result) => {
                         if (err) console.log(err)
                         bankaEmbed.setColor("GREEN")
-                        .setDescription(`${hex} ID'li oyuncunun bankadaki parası başarıyla \`${para}\` miktarına ayarlandı.`)
+                        .setDescription(`${hex} ID'li oyuncunun bankadaki parası başarıyla \`${eskipara}\` miktarından \`${para}\` miktarına ayarlandı.`)
                         .setAuthor("İşlem başarılı!")
                         message.channel.send(bankaEmbed)
                     })
