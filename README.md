@@ -1,6 +1,7 @@
 # Fivem SQL Bot
 # MericcaN41#0652
 ### FiveM Databaseinizi Discorda taşır !
+#### NOT: Bu bot bedavadır, editlenmesi serbesttir, satılması kesinlikle yasaktır.
 <img src="https://i.imgur.com/MNRbibv.png" width="200"  height="300"> <img src="https://i.imgur.com/cM5iYkR.png" width="200"  height="300"> <img src="https://i.imgur.com/9QFENK8.png" width="400" height="300">
 
 
@@ -39,6 +40,7 @@ Dosyaları indirip bir klasöre attıktan sonra klasörün içinde CMD açıp bu
 * !meslekbilgi meslek**KODU** SEVIYE (Girilmesse **0**) --> Girilen bilgilere göre mesleğin bilgilerini gösterir (Kod,maaş vs.)
 * !meslekver HEX meslek**KODU** SEVIYE --> Hexi girilen kişinin mesleğini değiştirir.
 * !telnodeğiş HEX NUMARA --> Hexi girilen kişinin telefon numarasını değiştirir. Sadece **yöneticiler** kullanabilir.
+* !isimdeğiştir HEX İSİM SOYİSİM --> Hexi girilen kişinin ismini ve soy ismini değiştirir.
 
 ## Nasıl meslek eklerim ?
 
@@ -50,6 +52,8 @@ Bunu yapmak zorunda değilsiniz ama meslek kodunun yerine istediğinizi yazdırm
 Meslek eklemek için **meslekler.json** dosyasını açıp **"meslekKodu":"görünecekİsim"** şeklinde eklemeler yapabilirsiniz.
 
 # Güncelleme notları 1.0.5
+> * !isimdeğiştir eklendi !
+>   * ÖRN: !isimdeğiştir 11000010aceb57a Ahmet Bekçi
 > * **commands** klasörü eklendi. Bütün komutlar burada bulunmaktadır.
 > * **index.js** kısaltıldı.
 > * CMD renklendirildi
