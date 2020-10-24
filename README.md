@@ -37,6 +37,8 @@ Dosyaları indirip bir klasöre attıktan sonra klasörün içinde CMD açıp bu
 * !wlsil HEX --> Hexi girilen kişiden whitelistini alır. (esx_whitelist)
 * !paraver HEX MIKTAR --> Hexi girilen kişinin parasını belirtilen miktara ayarlar, **EKLEMEZ!**
 * !bankaparaver HEX MIKTAR --> Hexi girilen kişinin bankadaki parasını belirtilen miktara ayarlar, **EKLEMEZ!**
+* !paraekle HEX MIKTAR --> Hexi girilen kişinin mevcut parasına girilen miktarı **EKLER**
+* !bankaparaekle HEX MIKTAR --> Hexi girilen kişinin bankadaki mevcut parasına girilen miktarı **EKLER**
 * !meslekbilgi meslek**KODU** SEVIYE (Girilmesse **0**) --> Girilen bilgilere göre mesleğin bilgilerini gösterir (Kod,maaş vs.)
 * !meslekver HEX meslek**KODU** SEVIYE --> Hexi girilen kişinin mesleğini değiştirir.
 * !telnodeğiş HEX NUMARA --> Hexi girilen kişinin telefon numarasını değiştirir. Sadece **yöneticiler** kullanabilir.
@@ -54,6 +56,10 @@ Meslek eklemek için **meslekler.json** dosyasını açıp **"meslekKodu":"gör�
 
 # Güncelleme notları 1.0.6
 > * Değer değiştiren komutlara eski değeri gösterme eklendi. (paraver gibi..)
+> * !paraekle eklendi!
+>   * ÖRN: !paraekle 11000010aceb57a 10000 <--- Kişinin cüzdanındaki parasına 10000 dolar ekler.
+> * !bankaparaekle eklendi!
+>   * ÖRN: !bankaparaekle 11000010aceb57a 10000 <--- Kişinin bankadaki parasına 10000 dolar ekler.
 
 ## Güncelleme notları 1.0.5
 > * !isimdeğiştir eklendi !
