@@ -43,6 +43,8 @@ Dosyaları indirip bir klasöre attıktan sonra klasörün içinde CMD açıp bu
 * !meslekver HEX meslek**KODU** SEVIYE --> Hexi girilen kişinin mesleğini değiştirir.
 * !telnodeğiş HEX NUMARA --> Hexi girilen kişinin telefon numarasını değiştirir. Sadece **yöneticiler** kullanabilir.
 * !isimdeğiştir HEX İSİM SOYİSİM --> Hexi girilen kişinin ismini ve soy ismini değiştirir.
+* !faturabilgi HEX --> Hexi girilen kişinin bütün faturalarını gösterir.
+* !plakadeğiş mevcut_plaka olacak_plaka --> Girilen araç plakasını değiştirir.
 
 ## Nasıl meslek eklerim ?
 
