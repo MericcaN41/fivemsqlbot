@@ -60,3 +60,4 @@ Meslek eklemek için **meslekler.json** dosyasını açıp **"meslekKodu":"gör�
 >   * <img src="https://i.imgur.com/7l3CQDV.png" width="250" height="150">
 > * !plakadeğiş eklendi!
 >   * Kullanım: !plakadeğiş ASD_123 FGH_456 <-- Boşluk yerine _ yazılmaktadır.
+>   * <img src="https://i.imgur.com/HJUYCja.png" width="250" height="150">
