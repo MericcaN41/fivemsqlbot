@@ -8,7 +8,7 @@ module.exports = {
             if (message.member.permissions.has("ADMINISTRATOR")) {
                 let mevcutPlaka = args[1].replace("_"," ")
                 let yapilacakPlaka = args[2].replace("_"," ")
-                if (!mevcutPlaka || yapilacakPlaka) return message.channel.send("Hatalı kullanım ! \n ÖRN: !plakadeğiş BIN_392 FKA_589")
+                if (!mevcutPlaka || !yapilacakPlaka) return message.channel.send("Hatalı kullanım ! \n ÖRN: !plakadeğiş BIN_392 FKA_589")
                 if (yapilacakPlaka.length >= 9) {
                     message.channel.send("Bu plaka çok büyük ! Maksimum plaka uzunluğu : \`8\`")
                     return;
