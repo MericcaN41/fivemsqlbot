@@ -54,38 +54,9 @@ Bunu yapmak zorunda değilsiniz ama meslek kodunun yerine istediğinizi yazdırm
 Meslek eklemek için **meslekler.json** dosyasını açıp **"meslekKodu":"görünecekİsim"** şeklinde eklemeler yapabilirsiniz.
 
 
-# Güncelleme notları 1.0.6
-> * Değer değiştiren komutlara eski değeri gösterme eklendi. (paraver gibi..)
-> * !paraekle eklendi!
->   * ÖRN: !paraekle 11000010aceb57a 10000 <--- Kişinin cüzdanındaki parasına 10000 dolar ekler.
->   * ![imagepara](https://i.imgur.com/6O4DCyu.png)
-> * !bankaparaekle eklendi!
->   * ÖRN: !bankaparaekle 11000010aceb57a 10000 <--- Kişinin bankadaki parasına 10000 dolar ekler.
-
-## Güncelleme notları 1.0.5
-> * !isimdeğiştir eklendi !
->   * ÖRN: !isimdeğiştir 11000010aceb57a Ahmet Bekçi
-> * **commands** klasörü eklendi. Bütün komutlar burada bulunmaktadır.
-> * **index.js** kısaltıldı.
-> * CMD renklendirildi
->   * ![image3](https://i.imgur.com/PrqvrH0.png)
-
-### Güncelleme notları 1.0.4
-> * !bankaparaver eklendi ! (!paraver ile aynı mantıkta çalışmaktadır.)
-> * !meslekbilgi eklendi!
->   * ÖRN: !meslekbilgi police 1
-> * !telnodeğiş eklendi!
->   * ÖRN: !telnodeğiş 11000010aceb57a 154786
-> * Bazı hatalar fixlendi.
-
-##### Güncelleme notları 1.0.3
-> * !paraver eklendi !
->   * !paraver HEX MIKTAR (**Yönetici** gerekmektedir.)
->     * ÖRN: !paraver 11000013b62aaa6 200000
-
-
-##### Güncelleme notları 1.0.2
-> * esx_whitelist uyumu eklendi !
->   * !wlekle HEX --> Whiteliste ekler. (İzinli rol gerekir.)
->   * !wlsil HEX --> Whitelistten çıkartır. (İzinli rol gerekir.)
-> * Bazı hatalar fixlendi.
+# Güncelleme notları 1.0.7
+> * !faturabilgi eklendi!
+>   * Kullanım: !faturabilgi 11000010aceb57a <-- Kişinin tüm faturalarını gösterir
+>   * <img src="https://i.imgur.com/7l3CQDV.png" width="250" height="150">
+> * !plakadeğiş eklendi!
+>   * Kullanım: !plakadeğiş ASD_123 FGH_456 <-- Boşluk yerine _ yazılmaktadır.
