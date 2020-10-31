@@ -21,7 +21,7 @@ module.exports = {
                         connection.query(`UPDATE owned_vehicles SET plate = \'${yapilacakPlaka}\' WHERE plate = \'${vehicle.plate}\'`,(err,result) => {if (err) console.log(err)})
                         connection.query(`UPDATE owned_vehicles SET vehicle = \'${model}\' WHERE vehicle = \'${vehicle.vehicle}\'`,(err,result) => {if (err) console.log(err)})
                         plakaEmbed.setColor("GREEN")
-                        .setDescription(`${mevcutPlaka} plakası ${yapilacakPlaka} ile değiştirildi!`)
+                        .setDescription(`\`${mevcutPlaka}\` plakası başarıyla \`${yapilacakPlaka}\` ile değiştirildi!`)
                         .setAuthor("İşlem başarılı!")
                         message.channel.send(plakaEmbed)
                         return;
