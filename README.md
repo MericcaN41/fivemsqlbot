@@ -55,8 +55,13 @@ Bunu yapmak zorunda değilsiniz ama meslek kodunun yerine istediğinizi yazdırm
 
 Meslek eklemek için **meslekler.json** dosyasını açıp **"meslekKodu":"görünecekİsim"** şeklinde eklemeler yapabilirsiniz.
 
+# Güncelleme notları 1.0.8
+> * !envanterbilgi eklendi!
+>   * Kullanım: !envanterbilgi 11000010aceb57a <-- Kişinin envanterindeki tüm eşyaları gösterir.
+>   * NOT: **commands** klasöründen altyapınıza uygun olan komutun başındaki **-** işaretini kaldırmanız gerekmektedir.
 
-# Güncelleme notları 1.0.7
+
+## Güncelleme notları 1.0.7
 > * !faturabilgi eklendi!
 >   * Kullanım: !faturabilgi 11000010aceb57a <-- Kişinin tüm faturalarını gösterir
 >   * <img src="https://i.imgur.com/7l3CQDV.png" width="250" height="150">
