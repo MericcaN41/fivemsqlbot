@@ -45,6 +45,7 @@ Dosyaları indirip bir klasöre attıktan sonra klasörün içinde CMD açıp bu
 * !isimdeğiştir HEX İSİM SOYİSİM --> Hexi girilen kişinin ismini ve soy ismini değiştirir.
 * !faturabilgi HEX --> Hexi girilen kişinin bütün faturalarını gösterir.
 * !plakadeğiş mevcut_plaka olacak_plaka --> Girilen araç plakasını değiştirir.
+* !envanterbilgi HEX --> Hexi girilen kişinin envanterindeki bütün eşyaları gösterir.
 
 ## Nasıl meslek eklerim ?
 
