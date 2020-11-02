@@ -25,6 +25,7 @@ Dosyaları indirip bir klasöre attıktan sonra klasörün içinde CMD açıp bu
 
 <p>Databaseinizin aktif olduğundan emin olun. (XAMP vs.)</p>
 <p>Config.json dosyasından komutları kullanacak rolün ID'sini girin.</p>
+<p><strong>commands</strong> klasöründen altyapınıza uygun olan <strong>envanterbilgi</strong> komutunun başındaki - işaretini kaldırın</p>
 <p>Ardından .env dosyasına botun tokenini girip <strong>baslat.bat</strong> dosyasını açın.</p>
 
 
@@ -60,6 +61,7 @@ Meslek eklemek için **meslekler.json** dosyasını açıp **"meslekKodu":"gör�
 > * !envanterbilgi eklendi!
 >   * Kullanım: !envanterbilgi 11000010aceb57a <-- Kişinin envanterindeki tüm eşyaları gösterir.
 >   * NOT: **commands** klasöründen altyapınıza uygun olan komutun başındaki **-** işaretini kaldırmanız gerekmektedir.
+>   * <img src="https://i.imgur.com/tidHLIz.png" width="250" height="150">
 
 
 ## Güncelleme notları 1.0.7
