@@ -15,18 +15,7 @@
 
 ## Nasıl Kurulur ?
 
-Her şeyden önce bilgisayarınızda **Node.js** yüklü olduğundan emin olun. [Node.js](https://nodejs.org/)
-
-Dosyaları indirip bir klasöre attıktan sonra klasörün içinde CMD açıp bunları yazın.
-> * npm i discord.js
-> * npm i mysql
-> * npm i dotenv
-> * (İSTEĞE GÖRE) **esx_whitelist** scriptini kurun. [Link](https://github.com/esx-framework/esx_whitelist)
-
-<p>Databaseinizin aktif olduğundan emin olun. (XAMP vs.)</p>
-<p>Config.json dosyasından komutları kullanacak rolün ID'sini girin.</p>
-<p><strong>commands</strong> klasöründen altyapınıza uygun olan <strong>envanterbilgi</strong> komutunun başındaki - işaretini kaldırın</p>
-<p>Ardından .env dosyasına botun tokenini girip <strong>baslat.bat</strong> dosyasını açın.</p>
+Kurulumu [Wikiden](https://github.com/MericcaN41/fivemsqlbot/wiki) öğrenebilirsiniz.
 
 
 ## Bütün komutlar
@@ -48,26 +37,8 @@ Dosyaları indirip bir klasöre attıktan sonra klasörün içinde CMD açıp bu
 * !plakadeğiş mevcut_plaka olacak_plaka --> Girilen araç plakasını değiştirir.
 * !envanterbilgi HEX --> Hexi girilen kişinin envanterindeki bütün eşyaları gösterir.
 
-## Nasıl meslek eklerim ?
-
-Bunu yapmak zorunda değilsiniz ama meslek kodunun yerine istediğinizi yazdırmak istiyorsanız yapabilirsiniz.
-* ÖRN: 
-  * police --> Polis
-  * ambulance --> Doktor
-
-Meslek eklemek için **meslekler.json** dosyasını açıp **"meslekKodu":"görünecekİsim"** şeklinde eklemeler yapabilirsiniz.
-
-# Güncelleme notları 1.0.8
+# Son güncelleme (1.0.8)
 > * !envanterbilgi eklendi!
 >   * Kullanım: !envanterbilgi 11000010aceb57a <-- Kişinin envanterindeki tüm eşyaları gösterir.
 >   * NOT: **commands** klasöründen altyapınıza uygun olan komutun başındaki **-** işaretini kaldırmanız gerekmektedir.
 >   * <img src="https://i.imgur.com/tidHLIz.png" width="250" height="150">
-
-
-## Güncelleme notları 1.0.7
-> * !faturabilgi eklendi!
->   * Kullanım: !faturabilgi 11000010aceb57a <-- Kişinin tüm faturalarını gösterir
->   * <img src="https://i.imgur.com/7l3CQDV.png" width="250" height="150">
-> * !plakadeğiş eklendi!
->   * Kullanım: !plakadeğiş ASD_123 FGH_456 <-- Boşluk yerine _ yazılmaktadır.
->   * <img src="https://i.imgur.com/HJUYCja.png" width="250" height="150">
