@@ -3,7 +3,12 @@
         "host": "localhost",
         "user": "root",
         "password": "",
-        "database": "essentialmode"
+        "database": "test1"
     },
-    "izinliRolid":"760843322570047538"
+    "izinliRolid":"760843322570047538",
+    "sunucuID":"444120999512899584",
+    "whitelistlogWebhookURL":"https://discordapp.com/api/webhooks/761954649720094760/yKl6f4ZE_rLSGbXYAaSLp-tuHJMOpCMZKd8nZlsztNwaJy3ywnYF8LeshQTvW0kol8YW",
+    "faturalogWebhookURL":"https://discordapp.com/api/webhooks/775629765507809280/gZIq661NTNrY-UnxcI_UjXxRm1GPUqJTj8bCcVT-Uu3RzAG0KB22XCSK8BddCwmO12jk",
+    "whitelistlogAktif":true,
+    "faturalogAktif":true
 }

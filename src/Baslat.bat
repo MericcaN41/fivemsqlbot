@@ -1,4 +1,4 @@
 echo off
 cls
 echo Bot baslatiliyor !                                                    
-node index.js
+node --no-deprecation index.js

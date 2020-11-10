@@ -15,9 +15,15 @@ connection.connect(err => {
         },3000)
         return;
     }
-    console.log("\x1b[32mDatabase \x1b[0mile bağlantı başarıyla sağlandı !")
+    console.log("\x1b[32mDatabase \x1b[0mile başarıyla bağlantı sağlandı !")
 })
 //////////////////////////////////
+
+
+// MYSQL-EVENTS // (LOGLAR İÇİN)
+const logs = require("./events/logs.js");
+logs.logs()
+//////////////////////////////////////
 
 
 // ENVIRONMENT VARIABLES (.env) //
@@ -47,7 +53,7 @@ client.on("message", async (message) => {
     let command = client.commands.get(args[0])
     let izinliRol = message.guild.roles.cache.get(ayarlar.izinliRolid)
 
-    if (command) {
+     if (command) {
         command.execute(message,args,connection,izinliRol)
     } else return
 

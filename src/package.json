@@ -9,8 +9,10 @@
   "author": "MRC",
   "license": "ISC",
   "dependencies": {
+    "discord-webhook-node": "^1.1.8",
     "discord.js": "^12.3.1",
     "dotenv": "^8.2.0",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "mysql-events": "^0.0.11"
   }
 }
