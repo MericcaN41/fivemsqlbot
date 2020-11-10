@@ -15,18 +15,7 @@
 
 ## Nasıl Kurulur ?
 
-Her şeyden önce bilgisayarınızda **Node.js** yüklü olduğundan emin olun. [Node.js](https://nodejs.org/)
-
-Dosyaları indirip bir klasöre attıktan sonra klasörün içinde CMD açıp bunları yazın.
-> * npm i discord.js
-> * npm i mysql
-> * npm i dotenv
-> * (İSTEĞE GÖRE) **esx_whitelist** scriptini kurun. [Link](https://github.com/esx-framework/esx_whitelist)
-
-<p>Databaseinizin aktif olduğundan emin olun. (XAMP vs.)</p>
-<p>Config.json dosyasından komutları kullanacak rolün ID'sini girin.</p>
-<p><strong>commands</strong> klasöründen altyapınıza uygun olan <strong>envanterbilgi</strong> komutunun başındaki - işaretini kaldırın</p>
-<p>Ardından .env dosyasına botun tokenini girip <strong>baslat.bat</strong> dosyasını açın.</p>
+Kurulumu [Wikiden](https://github.com/MericcaN41/fivemsqlbot/wiki) öğrenebilirsiniz.
 
 
 ## Bütün komutlar
