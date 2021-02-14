@@ -37,7 +37,11 @@ Kurulumu [Wikiden](https://github.com/MericcaN41/fivemsqlbot/wiki) öğrenebilir
 * !plakadeğiş mevcut_plaka olacak_plaka --> Girilen araç plakasını değiştirir.
 * !envanterbilgi HEX --> Hexi girilen kişinin envanterindeki bütün eşyaları gösterir.
 
-# Son güncelleme (1.0.9)
+# Son Güncelleme (2.0.0)
+> * Extendedmode desteği eklendi!
+> * Kurulum klasörün içindedir.
+
+## Güncelleme (1.0.9)
 > * Log sistemi eklendi !
 > * Kurulum için [Wikiyi](https://github.com/MericcaN41/fivemsqlbot/wiki) ziyaret edebilirsiniz.
 > * Bu güncelleme ile eklenen loglar
