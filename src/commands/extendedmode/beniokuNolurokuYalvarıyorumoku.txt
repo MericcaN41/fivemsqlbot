@@ -1,0 +1,8 @@
+Bunları nasıl kuracağım ?!?!?
+
+Mevcut komut dosyalarının isimlerinin başına "-" (çizgi işareti) koyunuz. ÖRN: -paraver.js (Bunu başaramıyor iseniz silebilirsiniz)
+Extendedmode dosyalarını commands klasörüne attıktan sonra botu başlatınız.
+
+Dosyaların ismini değiştirmenize gerek YOK!!
+
+Kolay ¯\_(ツ)_/¯
