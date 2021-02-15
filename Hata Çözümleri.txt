@@ -1,0 +1,54 @@
+Çözümlere geçmeden önce, çoğu kullanıcı kurulum yapmadığından dolayı hata almaktadır.
+Düzgünce kurulum yaparsanız bu hataların hiçbirini almayacaksınız.
+
+Aylar önce özenle hazırlanmış olan adım adım nasıl kurulur sayfası --> https://github.com/MericcaN41/fivemsqlbot/wiki/Nas%C4%B1l-kurulur%3F
+
+
+Kurulumu okumadım hata alıyorum bölgesi
+--------------------------------------------
+
+'node' is not recognized as an internal or external command, operable program or batch file.
+
+Kurulumun ilk adımı olan Node.js'i yüklememişsiniz.
+
+Yükleme linki --> https://nodejs.org/dist/v14.15.5/node-v14.15.5-x64.msi
+
+--------------------------------------------
+
+cannot find module 'discord.js'
+
+Modülleri yüklememişsiniz.
+
+Klasörün içinde CMD açıp bu komutu yazın.
+npm install
+
+--------------------------------------------
+bölge bitiş
+
+
+
+Klasörde nasıl CMD açarım ???
+
+Botun dosyalarının olduğu klasörde boş bir alana SHIFT + SAĞ TIK yapıyoruz.
+Ardından "Burada komut penceresi aç" veya "Burada PowerShell aç" benzeri bir buton göreceksiniz, tıklayın.
+Klasörün içinde CMD'niz açılmıştır.
+
+--------------------------------------------
+
+Cannot read property '0' of undefined
+
+MySQL tablo isimleriniz bottakilerden farklı olduğu için bu hatayı alıyorsunuz.
+Aldığınız hatayı dikkatlice okursanız genellikle ilk satırının sonunda hatayı veren dosyayı ve satırını vermektedir.
+Bu hatayı düzeltmek için biraz olsada MySQL bilginizin olması gerekmektedir.
+
+connection.query() içindeki MySQL kısmında tablo ismi geçmektedir, mesela "SELECT * FROM users" <-- users.
+Databaseinize giriş yapıp bakın. Users tablosunun ismi farklı bir şey olabilir. Tablo ismi yerine botu değiştirmenizi tavsiye ederim, aksi taktirde scriptleriniz hata verebilir.
+
+'users' tablosunun ismi 'members' olarak değiştirilmiş diyelim. (Tamamen varsayım)
+O zaman "SELECT * FROM users" yerine "SELECT * FROM members" yazıyoruz, ardından botu kapatıp açıyoruz ve sorunumuz düzeliyor :)
+
+-------------------------------------------
+
+Hatanızda yeşil yazılar görüyorsanız veya hatanız yukarıda yoksa bana discorddan ulaşabilirsiniz.
+MericcaN41#0652
+
