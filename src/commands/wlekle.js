@@ -8,10 +8,10 @@ module.exports = {
             .setFooter("MrcSQLSystem")
             if (message.member.roles.cache.find(r => r.id === izinliRol.id)) {
                 let hex = args[1]
+                if (!hex) return message.channel.send("Bir hex girmelisin.")
                 if (hex.startsWith("steam:") === false) {
                     hex = `steam:${hex}`
                 }
-                if (!hex) return message.channel.send("Bir hex girmelisin.")
                 connection.query("SELECT * FROM whitelist WHERE identifier = ?",hex,(err,result) => {
                     let user = result[0]
                     if (!user) {
