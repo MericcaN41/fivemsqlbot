@@ -23,7 +23,7 @@ Kurulumu [Wikiden](https://github.com/MericcaN41/fivemsqlbot/wiki) öğrenebilir
 * !kimlik HEX --> Hexi girilen kişinin bilgilerini yazar.
 * !telefon telefonNumarası --> Telefon numarası girilen kişinin bilgilerini yazar. Telefondan spam atanları bulmak için iyi bir yöntem.
 * !ck HEX --> Hexi girilen kişiye CK atar. Sadece **yöneticiler** kullanabilir.
-* !wlekle HEX --> Hexi girilen kişiye whitelist verir. (esx_whitelist)
+* !wlekle HEX @Kullanıcı --> Hexi girilen kişiye whitelist verir. (esx_whitelist)
 * !wlsil HEX --> Hexi girilen kişiden whitelistini alır. (esx_whitelist)
 * !paraver HEX MIKTAR --> Hexi girilen kişinin parasını belirtilen miktara ayarlar, **EKLEMEZ!**
 * !bankaparaver HEX MIKTAR --> Hexi girilen kişinin bankadaki parasını belirtilen miktara ayarlar, **EKLEMEZ!**
@@ -37,11 +37,19 @@ Kurulumu [Wikiden](https://github.com/MericcaN41/fivemsqlbot/wiki) öğrenebilir
 * !plakadeğiş mevcut_plaka olacak_plaka --> Girilen araç plakasını değiştirir.
 * !envanterbilgi HEX --> Hexi girilen kişinin envanterindeki bütün eşyaları gösterir.
 
-# Son Güncelleme (2.0.0)
+# Son Güncelleme (2.0.1)
+> * Whitelist eklemeye detaylı log eklendi.
+>   * config.json dosyasında "wlLogID" kısmına log atılmasını istediğiniz kanalın ID'sini giriniz.
+>   * .env dosyasına Steam Web API anahtarınızı giriniz.
+>   * Yeni kullanıım -> !wlekle HEX @Kullanıcı
+> * Kodlarda temizleme yapıldı.
+> <img src="https://i.imgur.com/A4woOpG.png" width="300" height="400">
+
+## Güncelleme (2.0.0)
 > * Extendedmode desteği eklendi!
 > * Kurulum klasörün içindedir.
 
-## Güncelleme (1.0.9)
+### Güncelleme (1.0.9)
 > * Log sistemi eklendi !
 > * Kurulum için [Wikiyi](https://github.com/MericcaN41/fivemsqlbot/wiki) ziyaret edebilirsiniz.
 > * Bu güncelleme ile eklenen loglar
