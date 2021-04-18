@@ -1,5 +1,4 @@
 const Discord = require("discord.js");
-const meslekler = require("../meslekler.json");
 module.exports = {
     name: "paraekle",
     description: "Hexi girilen kişiye girilen miktar kadar para ekler. (EXTENDEDMODE)",

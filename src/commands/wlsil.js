@@ -1,5 +1,4 @@
 const Discord = require("discord.js");
-const meslekler = require("../meslekler.json");
 module.exports = {
     name: "wlsil",
     description: "Girilen hexi whitelistten çıkartır(esx_whitelist)",

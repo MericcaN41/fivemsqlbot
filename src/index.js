@@ -9,7 +9,7 @@ const connection = mysql.createConnection(ayarlar.sql)
 
 connection.connect(err => {
     if (err) {
-        console.log("\x1b[32mDatabase \x1b[0mile bağlantı \x1b[31msağlanamadı ! \x1b[0mBot kapanacaktır. Lütfen database bağlantınızı kontrol edip tekrar deneyiniz.") // XAMPP açın.
+        console.log("\x1b[32mDatabase \x1b[0mile bağlantı \x1b[31msağlanamadı ! \x1b[0mBot kapanacaktır. Lütfen database bağlantınızı kontrol edip tekrar deneyiniz.")
         setTimeout(() => {
             process.exit(1)
         },3000)
@@ -21,8 +21,8 @@ connection.connect(err => {
 
 
 // MYSQL-EVENTS // (LOGLAR İÇİN)
-const logs = require("./events/logs.js");
-logs.logs()
+const { logs } = require("./events/logs.js");
+logs();
 //////////////////////////////////////
 
 
@@ -30,6 +30,7 @@ logs.logs()
 require("dotenv").config()
 var token = process.env.TOKEN;
 var prefix = process.env.PREFIX;
+var steamapikey = process.env.STEAMAPIKEY;
 //////////////////////////////////
 
 // ANA KOD //
@@ -54,7 +55,7 @@ client.on("message", async (message) => {
     let izinliRol = message.guild.roles.cache.get(ayarlar.izinliRolid)
 
      if (command) {
-        command.execute(message,args,connection,izinliRol)
+        command.execute(message,args,connection,izinliRol,steamapikey)
     } else return
 
 

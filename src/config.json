@@ -5,10 +5,11 @@
         "password": "",
         "database": "essentialmode"
     },
-    "izinliRolid":"760843322570047538",
-    "sunucuID":"444120999512899584",
-    "whitelistlogWebhookURL":"",
-    "faturalogWebhookURL":"",
+    "izinliRolid":"0",
+    "sunucuID":"0",
+    "wlLogID":"0",
+    "whitelistlogWebhookURL":"0",
+    "faturalogWebhookURL":"0",
     "whitelistlogAktif":true,
     "faturalogAktif":true
 }
