@@ -31,6 +31,8 @@ module.exports = {
                                 let banres = await getSteambans(sid,apikey)
 
                                 let profil = res.data.response.players[0], banprofil = banres.data.players[0]
+                                
+                                if (!profil || !banprofil) return message.channel.send("Steam profilini bulamadım!");
                                 const wlLogEmbed = new Discord.MessageEmbed()
                                 .setFooter("MrcSQLSystem")
                                 .setColor("DARK_GREEN")
