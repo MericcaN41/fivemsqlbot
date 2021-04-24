@@ -18,10 +18,10 @@ module.exports = {
                     let eskimeslek = user.job
                     let eskigrade = user.job_grade
                     if (user) {
-                        connection.query(`UPDATE users SET job = '${meslek}' WHERE job = '${user.job}'`, (err,result) => {
+                        connection.query(`UPDATE users SET job = '${meslek}' WHERE identifier = '${user.identifier}'`, (err,result) => {
                             if (err) console.log(err)
                         })
-                        connection.query(`UPDATE users SET job_grade = ${grade} WHERE job_grade = ${user.job_grade}`, (err,result) => {
+                        connection.query(`UPDATE users SET job_grade = ${grade} WHERE identifier = '${user.identifier}'`, (err,result) => {
                             if (err) console.log(err)
                         })
                         meslekEmbed.setColor("GREEN")
