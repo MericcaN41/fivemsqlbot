@@ -12,7 +12,7 @@ module.exports = {
                 }
                 let meslek = args[2]
                 let grade = parseInt(args[3])
-                if (!hex || !meslek || !grade) return message.channel.send("Hatalı kullanım ! \nÖRN:!meslekver 11000010aceb57a police 1")
+                if (!hex || !meslek || grade !== null) return message.channel.send("Hatalı kullanım ! \nÖRN:!meslekver 11000010aceb57a police 1")
                 connection.query("SELECT * FROM users WHERE identifier = ?",hex,(err,result) => {
                     let user = result[0]
                     let eskimeslek = user.job
