@@ -14,8 +14,8 @@ module.exports = {
 
                 connection.query("SELECT * FROM users WHERE identifier = ?",hex,(err,result) => {
                     let user = result[0]
-                    let eskino = user.phone_number
                     if (user) {
+                        let eskino = user.phone_number
                         connection.query(`UPDATE users SET phone_number = ${no} WHERE phone_number = ${user.phone_number}`,(err,result) => {
                             if (err) console.log(err)
                             telEmbed.setColor("GREEN")
