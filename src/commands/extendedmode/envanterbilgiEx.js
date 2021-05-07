@@ -15,8 +15,8 @@ module.exports = {
                 if (user) {
                     let dataJson = JSON.parse(user.inventory)
                     let itemler = []
-                    dataJson.forEach(obj => {
-                        itemler.push(`${obj.name} (**${obj.count}**)`)
+                    Object.keys(dataJson).forEach(key => {
+                        itemler.push(`${key} (${dataJson[key]})`)
                     })
                     discEmbed.setColor("GREEN")
                     .setAuthor(`${hex.replace("steam:","")} kişisinin envanteri`)
