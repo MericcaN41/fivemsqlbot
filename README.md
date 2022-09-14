@@ -43,7 +43,6 @@ Kurulumu [Wikiden](https://github.com/MericcaN41/fivemsqlbot/wiki) öğrenebilir
 >   * .env dosyasına Steam Web API anahtarınızı giriniz.
 >   * Yeni kullanıım -> !wlekle HEX @Kullanıcı
 > * Kodlarda temizleme yapıldı.
-> <img src="https://i.imgur.com/A4woOpG.png" width="300" height="400">
 
 ## Güncelleme (2.0.0)
 > * Extendedmode desteği eklendi!
